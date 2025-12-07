@@ -36,31 +36,10 @@ This project involves building a Telegram bot that functions as an automated wor
 
 ---
 
-### Project 2: Blog Website
-
-**Repository:** [brownpanda667-dotcom/blog](https://github.com/brownpanda667-dotcom/blog){:target="_blank"}
-
-**Status:** Active
-
-**Description:**
-
-A personal blog website powered by Jekyll and GitHub Pages. This blog is designed for sharing technical articles, tutorials, and project updates.
-
-**Features:**
-- Built with Jekyll static site generator
-- Hosted on GitHub Pages
-- Markdown-based content
-- Responsive design with Minima theme
-
-[👉 Open Repository on GitHub](https://github.com/brownpanda667-dotcom/blog){:target="_blank" .btn}
-
----
-
 ## How to Navigate
 
 - **Click on any project link** above to open the repository in a new tab
 - **View the README** in each repository for more detailed information
 - **Check out the code** to see the implementation details
-- **Read my blog posts** for tutorials and technical insights
 
 Enjoy exploring!
