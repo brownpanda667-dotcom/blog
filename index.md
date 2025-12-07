@@ -13,15 +13,11 @@ title: Welcome to My Portfolio
   line-height: 1.8;
 }
 
-.projects-section {
-  margin-top: 50px;
-}
-
 .project-card {
   background: linear-gradient(135deg, rgba(30, 30, 40, 1) 0%, rgba(40, 40, 55, 1) 100%);
   border: 1px solid rgba(100, 200, 255, 0.2);
   padding: 30px;
-  margin: 25px 0;
+  margin: 30px 0;
   border-radius: 10px;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -33,57 +29,36 @@ title: Welcome to My Portfolio
   box-shadow: 0 8px 25px rgba(0, 168, 255, 0.2);
 }
 
-.project-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
 .project-title {
   font-size: 1.8em;
   font-weight: 700;
   color: #00d4ff;
-  margin: 0 0 10px 0;
-}
-
-.project-meta {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-  font-size: 0.95em;
+  margin-bottom: 15px;
 }
 
 .meta-badge {
+  display: inline-block;
   background: rgba(0, 212, 255, 0.1);
   border: 1px solid rgba(0, 212, 255, 0.3);
   padding: 6px 12px;
   border-radius: 20px;
   color: #00d4ff;
   font-weight: 500;
-}
-
-.project-summary {
-  margin: 20px 0;
-  color: #e0e0e0;
-  line-height: 1.7;
-}
-
-.tech-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin: 15px 0;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 0.9em;
 }
 
 .tech-tag {
+  display: inline-block;
   background: rgba(100, 200, 255, 0.15);
   border: 1px solid rgba(100, 200, 255, 0.3);
-  padding: 5px 10px;
+  padding: 6px 12px;
   border-radius: 4px;
   font-size: 0.85em;
   color: #64c8ff;
+  margin-right: 8px;
+  margin-bottom: 8px;
 }
 
 .cta-button {
@@ -94,6 +69,7 @@ title: Welcome to My Portfolio
   border-radius: 6px;
   text-decoration: none;
   margin-top: 15px;
+  margin-right: 10px;
   transition: all 0.3s ease;
   font-weight: 600;
   border: 1px solid rgba(0, 212, 255, 0.3);
@@ -103,13 +79,6 @@ title: Welcome to My Portfolio
   transform: scale(1.05);
   box-shadow: 0 6px 20px rgba(0, 168, 255, 0.4);
   background: linear-gradient(135deg, #00c8ff 0%, #00a8ff 100%);
-}
-
-.divider {
-  border: none;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, rgba(100, 200, 255, 0.3), transparent);
-  margin: 40px 0;
 }
 
 .section-title {
@@ -123,9 +92,9 @@ title: Welcome to My Portfolio
   display: inline-block;
 }
 
-.navigation-grid {
+.nav-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 20px;
   margin: 30px 0;
 }
@@ -136,6 +105,7 @@ title: Welcome to My Portfolio
   padding: 20px;
   border-radius: 8px;
   transition: all 0.3s ease;
+  line-height: 1.6;
 }
 
 .nav-item:hover {
@@ -145,6 +115,23 @@ title: Welcome to My Portfolio
 
 .nav-item strong {
   color: #00d4ff;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.text-center {
+  text-align: center;
+  color: #00a8ff;
+  font-weight: 600;
+  margin-top: 50px;
+  font-size: 1.1em;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(100, 200, 255, 0.3), transparent);
+  margin: 40px 0;
 }
 </style>
 
@@ -152,123 +139,107 @@ title: Welcome to My Portfolio
 
 <div class="portfolio-intro">
 
-👋 **Hey there!** I'm a software engineer with **10+ years of backend development experience**. I specialize in building REST APIs, cloud solutions, and AI applications. This portfolio showcases my GitHub projects and recent work.
+Hey there! I'm a software engineer with **10+ years of backend development experience**. I specialize in building REST APIs, cloud solutions, and AI applications. This portfolio showcases my GitHub projects.
 
-**Explore my projects below** and click any repository link to see the full code and documentation in a new tab.
+**Click on any project below** to explore the repository and see the full code and documentation.
 
 </div>
 
 ---
 
-<h2 class="section-title">🚀 My Projects</h2>
+## 🚀 My Projects
 
-Here are some of my recent projects with detailed summaries:
+Here are my featured projects:
 
 <div class="project-card">
 
-<div class="project-title">Digital Gym Buddy</div>
+### Digital Gym Buddy
 
-<div class="project-meta">
-  <span class="meta-badge">🐍 Python</span>
-  <span class="meta-badge">⚡ Active Development</span>
-  <span class="meta-badge">🤖 AI-Powered</span>
-</div>
+<span class="meta-badge">🐍 Python</span>
+<span class="meta-badge">⚡ Active</span>
+<span class="meta-badge">🤖 AI-Powered</span>
 
-**Repository:** [brownpanda667-dotcom/Digital-Gym-Buddy](https://github.com/brownpanda667-dotcom/Digital-Gym-Buddy){:target="_blank"}
-
-**Project Summary:**
-
-Building an intelligent Telegram bot that serves as an automated workout tracker, powered by OpenAI and Google APIs. The bot listens to voice and text messages, extracts workout data using GPT, and logs it to Google Sheets for tracking and analysis.
+An intelligent Telegram bot that serves as an automated workout tracker, powered by OpenAI and Google APIs. The bot listens to voice and text messages, extracts workout data using GPT, and logs it to Google Sheets.
 
 **Key Features:**
-- 🎤 Voice-to-text conversion using Whisper API
-- 🧠 Intelligent data extraction using GPT
-- 📊 Google Sheets integration for workout logging
-- 📈 Automatic streak calculation and summaries
-- 💬 Natural language processing for user input
+- Voice-to-text conversion using Whisper API
+- Intelligent data extraction using GPT
+- Google Sheets integration for logging
+- Automatic streak calculation
 
-<div class="tech-list">
-  <span class="tech-tag">Telegram Bot API</span>
-  <span class="tech-tag">OpenAI (Whisper & GPT)</span>
-  <span class="tech-tag">Google Sheets API</span>
-  <span class="tech-tag">Python</span>
-  <span class="tech-tag">GSPread</span>
-</div>
+**Technologies:**
 
-[👉 View Repository on GitHub](https://github.com/brownpanda667-dotcom/Digital-Gym-Buddy){:target="_blank" .cta-button}
+<span class="tech-tag">Telegram Bot API</span>
+<span class="tech-tag">OpenAI</span>
+<span class="tech-tag">Google Sheets</span>
+<span class="tech-tag">Python</span>
+<span class="tech-tag">GSPread</span>
+
+[👉 View on GitHub](https://github.com/brownpanda667-dotcom/Digital-Gym-Buddy){:target="_blank" .cta-button}
 
 </div>
 
 <div class="project-card">
 
-<div class="project-title">My Portfolio Blog</div>
+### My Portfolio Blog
 
-<div class="project-meta">
-  <span class="meta-badge">📝 Jekyll</span>
-  <span class="meta-badge">✅ Active</span>
-  <span class="meta-badge">🌐 GitHub Pages</span>
-</div>
+<span class="meta-badge">📝 Jekyll</span>
+<span class="meta-badge">✅ Active</span>
+<span class="meta-badge">🌐 GitHub Pages</span>
 
-**Repository:** [brownpanda667-dotcom/blog](https://github.com/brownpanda667-dotcom/blog){:target="_blank"}
-
-**Project Summary:**
-
-A personal portfolio blog website built with Jekyll and hosted on GitHub Pages. This is the site you're currently viewing! It's designed for sharing technical articles, tutorials, project documentation, and professional insights.
+A personal portfolio blog website built with Jekyll and hosted on GitHub Pages. Designed for sharing technical articles, tutorials, and project documentation.
 
 **Key Features:**
-- 📱 Fully responsive design
-- 🎨 Clean, elegant interface with Minima theme
-- 📝 Markdown-based content management
-- 🚀 Static site generation for blazing-fast performance
-- 💾 Version controlled on GitHub
-- 🔄 Automatic CI/CD deployment
+- Fully responsive design
+- Clean, elegant interface
+- Markdown-based content
+- Fast static site generation
+- Version controlled on GitHub
+- Automatic CI/CD deployment
 
-<div class="tech-list">
-  <span class="tech-tag">Jekyll</span>
-  <span class="tech-tag">GitHub Pages</span>
-  <span class="tech-tag">Markdown</span>
-  <span class="tech-tag">Minima Theme</span>
-  <span class="tech-tag">HTML/CSS</span>
+**Technologies:**
+
+<span class="tech-tag">Jekyll</span>
+<span class="tech-tag">GitHub Pages</span>
+<span class="tech-tag">Markdown</span>
+<span class="tech-tag">HTML/CSS</span>
+
+[👉 View on GitHub](https://github.com/brownpanda667-dotcom/blog){:target="_blank" .cta-button}
+
 </div>
 
-[👉 View Repository on GitHub](https://github.com/brownpanda667-dotcom/blog){:target="_blank" .cta-button}
+---
 
-</div>
+## 📚 How to Navigate
 
-<hr class="divider" />
-
-<h2 class="section-title">📚 How to Navigate</h2>
-
-<div class="navigation-grid">
+<div class="nav-grid">
 
 <div class="nav-item">
 <strong>🔗 Explore Projects</strong>
 
-Click on any project link above to open the repository in a new tab. Browse the code, read the README for detailed documentation.
+Click on any project link above to open the repository in a new tab. Browse the code and read the README for details.
 </div>
 
 <div class="nav-item">
-<strong>📖 Read My Blog</strong>
+<strong>📖 Read Blog Posts</strong>
 
-Scroll down to find my latest blog posts, tutorials, and technical articles. Great for learning more about my approach and insights.
+Scroll down to find my latest blog posts, tutorials, and technical articles.
 </div>
 
 <div class="nav-item">
 <strong>💻 View the Code</strong>
 
-All repositories are open source. Check out the implementation details, architecture, and best practices used in each project.
+All repositories are open source. Check out the implementation details and best practices.
 </div>
 
 <div class="nav-item">
 <strong>🤝 Let's Connect</strong>
 
-Interested in collaborating? Check out my GitHub profile for more details and ways to get in touch.
+Interested in collaborating? Check out my GitHub profile for more details.
 </div>
 
 </div>
 
----
-
-<p style="text-align: center; color: #00a8ff; font-weight: 600; margin-top: 50px;">
-✨ Thanks for visiting my portfolio. Happy exploring! ✨
+<p class="text-center">
+✨ Thanks for visiting! Happy exploring! ✨
 </p>
