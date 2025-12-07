@@ -10,3 +10,11 @@ plugins:
 
 paginate: 10
 paginate_path: "/blog/page:num/"
+
+# Hide header and customize site
+header_pages: []
+show_excerpts: false
+
+# Custom styling
+minima:
+  skin: dark
