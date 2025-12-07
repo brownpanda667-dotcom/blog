@@ -4,23 +4,33 @@ title: Welcome to My Portfolio
 ---
 
 <style>
+.page-content {
+  text-align: center;
+}
+
+page-content > h1 {
+  text-align: center;
+}
+
 .portfolio-intro {
   background: linear-gradient(135deg, rgba(100, 200, 255, 0.1) 0%, rgba(50, 150, 255, 0.05) 100%);
   border-left: 4px solid #00a8ff;
   padding: 30px;
-  margin: 30px 0;
+  margin: 30px auto;
   border-radius: 8px;
   line-height: 1.8;
+  max-width: 900px;
 }
 
 .project-card {
   background: linear-gradient(135deg, rgba(30, 30, 40, 1) 0%, rgba(40, 40, 55, 1) 100%);
   border: 1px solid rgba(100, 200, 255, 0.2);
   padding: 30px;
-  margin: 30px 0;
+  margin: 30px auto;
   border-radius: 10px;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 900px;
 }
 
 .project-card:hover {
@@ -54,12 +64,14 @@ title: Welcome to My Portfolio
   color: #e0e0e0;
   line-height: 1.7;
   margin: 15px 0;
+  text-align: left;
 }
 
 .features-list {
   color: #e0e0e0;
   margin: 15px 0;
   padding-left: 20px;
+  text-align: left;
 }
 
 .features-list li {
@@ -108,13 +120,15 @@ title: Welcome to My Portfolio
   border-bottom: 3px solid #00a8ff;
   padding-bottom: 10px;
   display: inline-block;
+  margin-left: 0;
 }
 
 .nav-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 20px;
-  margin: 30px 0;
+  margin: 30px auto;
+  max-width: 1000px;
 }
 
 .nav-item {
@@ -153,9 +167,9 @@ hr {
 }
 </style>
 
-# Welcome to My Portfolio
+<div class="portfolio-intro" style="text-align: center; border-left: none; border-top: 3px solid #00a8ff; border-bottom: 3px solid #00a8ff;">
 
-<div class="portfolio-intro">
+## Welcome to My Portfolio
 
 Hey there! I'm a software engineer with **10+ years of backend development experience**. I specialize in building REST APIs, cloud solutions, and AI applications. This portfolio showcases my GitHub projects.
 
