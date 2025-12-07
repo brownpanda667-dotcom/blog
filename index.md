@@ -3,43 +3,272 @@ layout: home
 title: Welcome to My Portfolio
 ---
 
+<style>
+.portfolio-intro {
+  background: linear-gradient(135deg, rgba(100, 200, 255, 0.1) 0%, rgba(50, 150, 255, 0.05) 100%);
+  border-left: 4px solid #00a8ff;
+  padding: 30px;
+  margin: 30px 0;
+  border-radius: 8px;
+  line-height: 1.8;
+}
+
+.projects-section {
+  margin-top: 50px;
+}
+
+.project-card {
+  background: linear-gradient(135deg, rgba(30, 30, 40, 1) 0%, rgba(40, 40, 55, 1) 100%);
+  border: 1px solid rgba(100, 200, 255, 0.2);
+  padding: 30px;
+  margin: 25px 0;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(100, 200, 255, 0.5);
+  box-shadow: 0 8px 25px rgba(0, 168, 255, 0.2);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.project-title {
+  font-size: 1.8em;
+  font-weight: 700;
+  color: #00d4ff;
+  margin: 0 0 10px 0;
+}
+
+.project-meta {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  font-size: 0.95em;
+}
+
+.meta-badge {
+  background: rgba(0, 212, 255, 0.1);
+  border: 1px solid rgba(0, 212, 255, 0.3);
+  padding: 6px 12px;
+  border-radius: 20px;
+  color: #00d4ff;
+  font-weight: 500;
+}
+
+.project-summary {
+  margin: 20px 0;
+  color: #e0e0e0;
+  line-height: 1.7;
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 15px 0;
+}
+
+.tech-tag {
+  background: rgba(100, 200, 255, 0.15);
+  border: 1px solid rgba(100, 200, 255, 0.3);
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.85em;
+  color: #64c8ff;
+}
+
+.cta-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #00a8ff 0%, #0087cc 100%);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  border: 1px solid rgba(0, 212, 255, 0.3);
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 168, 255, 0.4);
+  background: linear-gradient(135deg, #00c8ff 0%, #00a8ff 100%);
+}
+
+.divider {
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(100, 200, 255, 0.3), transparent);
+  margin: 40px 0;
+}
+
+.section-title {
+  font-size: 2.2em;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #00a8ff;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.navigation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.nav-item {
+  background: rgba(50, 50, 70, 0.8);
+  border: 1px solid rgba(100, 200, 255, 0.2);
+  padding: 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+  background: rgba(100, 100, 120, 0.8);
+  border-color: rgba(100, 200, 255, 0.5);
+}
+
+.nav-item strong {
+  color: #00d4ff;
+}
+</style>
+
 # Welcome to My Portfolio
 
-Hey there! I'm a software engineer with 10+ years of backend development experience. This page showcases my GitHub projects. Click on any project to explore it on GitHub in a new tab!
+<div class="portfolio-intro">
+
+👋 **Hey there!** I'm a software engineer with **10+ years of backend development experience**. I specialize in building REST APIs, cloud solutions, and AI applications. This portfolio showcases my GitHub projects and recent work.
+
+**Explore my projects below** and click any repository link to see the full code and documentation in a new tab.
+
+</div>
 
 ---
 
-## My Projects
+<h2 class="section-title">🚀 My Projects</h2>
 
-Here are some of my recent projects:
+Here are some of my recent projects with detailed summaries:
 
-### Project 1: Digital Gym Buddy
+<div class="project-card">
+
+<div class="project-title">Digital Gym Buddy</div>
+
+<div class="project-meta">
+  <span class="meta-badge">🐍 Python</span>
+  <span class="meta-badge">⚡ Active Development</span>
+  <span class="meta-badge">🤖 AI-Powered</span>
+</div>
 
 **Repository:** [brownpanda667-dotcom/Digital-Gym-Buddy](https://github.com/brownpanda667-dotcom/Digital-Gym-Buddy){:target="_blank"}
 
-**Language:** Python
+**Project Summary:**
+
+Building an intelligent Telegram bot that serves as an automated workout tracker, powered by OpenAI and Google APIs. The bot listens to voice and text messages, extracts workout data using GPT, and logs it to Google Sheets for tracking and analysis.
+
+**Key Features:**
+- 🎤 Voice-to-text conversion using Whisper API
+- 🧠 Intelligent data extraction using GPT
+- 📊 Google Sheets integration for workout logging
+- 📈 Automatic streak calculation and summaries
+- 💬 Natural language processing for user input
+
+<div class="tech-list">
+  <span class="tech-tag">Telegram Bot API</span>
+  <span class="tech-tag">OpenAI (Whisper & GPT)</span>
+  <span class="tech-tag">Google Sheets API</span>
+  <span class="tech-tag">Python</span>
+  <span class="tech-tag">GSPread</span>
+</div>
+
+[👉 View Repository on GitHub](https://github.com/brownpanda667-dotcom/Digital-Gym-Buddy){:target="_blank" .cta-button}
+
+</div>
+
+<div class="project-card">
+
+<div class="project-title">My Portfolio Blog</div>
+
+<div class="project-meta">
+  <span class="meta-badge">📝 Jekyll</span>
+  <span class="meta-badge">✅ Active</span>
+  <span class="meta-badge">🌐 GitHub Pages</span>
+</div>
+
+**Repository:** [brownpanda667-dotcom/blog](https://github.com/brownpanda667-dotcom/blog){:target="_blank"}
 
 **Project Summary:**
 
-This project involves building a Telegram bot that functions as an automated workout tracker. The bot will:
+A personal portfolio blog website built with Jekyll and hosted on GitHub Pages. This is the site you're currently viewing! It's designed for sharing technical articles, tutorials, project documentation, and professional insights.
 
-1. **Listen for messages** (voice or text) sent by users
-2. **Process the input using OpenAI APIs:**
-   - Whisper for converting voice notes to text
-   - GPT for extracting structured workout data (e.g., exercise, weight, reps) from natural language
-3. **Log the data** into a Google Sheet for tracking workouts
-4. **Provide summaries** and calculate streaks by reading and analyzing the logged data
+**Key Features:**
+- 📱 Fully responsive design
+- 🎨 Clean, elegant interface with Minima theme
+- 📝 Markdown-based content management
+- 🚀 Static site generation for blazing-fast performance
+- 💾 Version controlled on GitHub
+- 🔄 Automatic CI/CD deployment
 
-**Key Technologies:** Telegram Bot API, OpenAI (Whisper & GPT), Google Sheets API, Python, GSPread
+<div class="tech-list">
+  <span class="tech-tag">Jekyll</span>
+  <span class="tech-tag">GitHub Pages</span>
+  <span class="tech-tag">Markdown</span>
+  <span class="tech-tag">Minima Theme</span>
+  <span class="tech-tag">HTML/CSS</span>
+</div>
 
-[👉 Open Repository on GitHub](https://github.com/brownpanda667-dotcom/Digital-Gym-Buddy){:target="_blank" .btn}
+[👉 View Repository on GitHub](https://github.com/brownpanda667-dotcom/blog){:target="_blank" .cta-button}
+
+</div>
+
+<hr class="divider" />
+
+<h2 class="section-title">📚 How to Navigate</h2>
+
+<div class="navigation-grid">
+
+<div class="nav-item">
+<strong>🔗 Explore Projects</strong>
+
+Click on any project link above to open the repository in a new tab. Browse the code, read the README for detailed documentation.
+</div>
+
+<div class="nav-item">
+<strong>📖 Read My Blog</strong>
+
+Scroll down to find my latest blog posts, tutorials, and technical articles. Great for learning more about my approach and insights.
+</div>
+
+<div class="nav-item">
+<strong>💻 View the Code</strong>
+
+All repositories are open source. Check out the implementation details, architecture, and best practices used in each project.
+</div>
+
+<div class="nav-item">
+<strong>🤝 Let's Connect</strong>
+
+Interested in collaborating? Check out my GitHub profile for more details and ways to get in touch.
+</div>
+
+</div>
 
 ---
 
-## How to Navigate
-
-- **Click on any project link** above to open the repository in a new tab
-- **View the README** in each repository for more detailed information
-- **Check out the code** to see the implementation details
-
-Enjoy exploring!
+<p style="text-align: center; color: #00a8ff; font-weight: 600; margin-top: 50px;">
+✨ Thanks for visiting my portfolio. Happy exploring! ✨
+</p>
