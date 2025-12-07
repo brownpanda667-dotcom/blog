@@ -1,7 +1,5 @@
-title: My Blog
-description: A blog powered by Jekyll and GitHub Pages
-author: Your Name
-email: your.email@example.com
+author: Brown Panda
+email: brownpanda667@gmail.com
 baseurl: ""
 url: "https://brownpanda667-dotcom.github.io/blog"
 theme: minima
