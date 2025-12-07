@@ -30,10 +30,11 @@ title: Welcome to My Portfolio
 }
 
 .project-title {
-  font-size: 1.8em;
+  font-size: 1.6em;
   font-weight: 700;
   color: #00d4ff;
   margin-bottom: 15px;
+  margin-top: 0;
 }
 
 .meta-badge {
@@ -45,8 +46,25 @@ title: Welcome to My Portfolio
   color: #00d4ff;
   font-weight: 500;
   margin-right: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   font-size: 0.9em;
+}
+
+.project-description {
+  color: #e0e0e0;
+  line-height: 1.7;
+  margin: 15px 0;
+}
+
+.features-list {
+  color: #e0e0e0;
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+.features-list li {
+  margin: 8px 0;
+  line-height: 1.6;
 }
 
 .tech-tag {
@@ -152,20 +170,24 @@ Hey there! I'm a software engineer with **10+ years of backend development exper
 Here are my featured projects:
 
 <div class="project-card">
-
-### Digital Gym Buddy
+<h3 class="project-title">Digital Gym Buddy</h3>
 
 <span class="meta-badge">🐍 Python</span>
 <span class="meta-badge">⚡ Active</span>
 <span class="meta-badge">🤖 AI-Powered</span>
 
-An intelligent Telegram bot that serves as an automated workout tracker, powered by OpenAI and Google APIs. The bot listens to voice and text messages, extracts workout data using GPT, and logs it to Google Sheets.
+<p class="project-description">
+An intelligent Telegram bot that serves as an automated workout tracker, powered by OpenAI and Google APIs. The bot listens to voice and text messages, extracts workout data using GPT, and logs it to Google Sheets for tracking and analysis.
+</p>
 
 **Key Features:**
-- Voice-to-text conversion using Whisper API
-- Intelligent data extraction using GPT
-- Google Sheets integration for logging
-- Automatic streak calculation
+
+<ul class="features-list">
+<li>Voice-to-text conversion using Whisper API</li>
+<li>Intelligent data extraction using GPT</li>
+<li>Google Sheets integration for logging</li>
+<li>Automatic streak calculation</li>
+</ul>
 
 **Technologies:**
 
@@ -175,27 +197,31 @@ An intelligent Telegram bot that serves as an automated workout tracker, powered
 <span class="tech-tag">Python</span>
 <span class="tech-tag">GSPread</span>
 
-[👉 View on GitHub](https://github.com/brownpanda667-dotcom/Digital-Gym-Buddy){:target="_blank" .cta-button}
+<a href="https://github.com/brownpanda667-dotcom/Digital-Gym-Buddy" target="_blank" class="cta-button">👉 View on GitHub</a>
 
 </div>
 
 <div class="project-card">
-
-### My Portfolio Blog
+<h3 class="project-title">My Portfolio Blog</h3>
 
 <span class="meta-badge">📝 Jekyll</span>
 <span class="meta-badge">✅ Active</span>
 <span class="meta-badge">🌐 GitHub Pages</span>
 
+<p class="project-description">
 A personal portfolio blog website built with Jekyll and hosted on GitHub Pages. Designed for sharing technical articles, tutorials, and project documentation.
+</p>
 
 **Key Features:**
-- Fully responsive design
-- Clean, elegant interface
-- Markdown-based content
-- Fast static site generation
-- Version controlled on GitHub
-- Automatic CI/CD deployment
+
+<ul class="features-list">
+<li>Fully responsive design</li>
+<li>Clean, elegant interface</li>
+<li>Markdown-based content</li>
+<li>Fast static site generation</li>
+<li>Version controlled on GitHub</li>
+<li>Automatic CI/CD deployment</li>
+</ul>
 
 **Technologies:**
 
@@ -204,7 +230,7 @@ A personal portfolio blog website built with Jekyll and hosted on GitHub Pages. 
 <span class="tech-tag">Markdown</span>
 <span class="tech-tag">HTML/CSS</span>
 
-[👉 View on GitHub](https://github.com/brownpanda667-dotcom/blog){:target="_blank" .cta-button}
+<a href="https://github.com/brownpanda667-dotcom/blog" target="_blank" class="cta-button">👉 View on GitHub</a>
 
 </div>
 
